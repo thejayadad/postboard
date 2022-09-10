@@ -1,0 +1,45 @@
+<%-include("partials/header")%>
+<main>
+    <section class="feed">
+        <% for(var i = 0; i < boards.length; i++) { %>
+            <article>
+                <div>
+                    <h5><%=user %></h5>
+                    <h3><%=title %></h3>
+                    <p><%=body %></p>
+                </div>
+                </article>
+
+            <% } %>
+
+    <article>
+    <div>
+        <h5>Username</h5>
+        <h3>Title Here</h3>
+        <p>Here is the description of the post</p>
+    </div>
+    </article>
+    <article>
+    <div>
+        <h5>Username</h5>
+        <h3>Title Here</h3>
+        <p>Here is the description of the post</p>
+    </div>
+    </article>
+    <article>
+    <div>
+        <h5>Username</h5>
+        <h3>Title Here</h3>
+        <p>Here is the description of the post</p>
+    </div>
+    </article>
+    </section>
+    <section class="aside">
+        <p>aside</p>
+        <p><%=name %></p>
+    </section>
+
+</main>
+
+
+<%-include("partials/footer")%>
